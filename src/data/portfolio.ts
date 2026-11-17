@@ -12,7 +12,7 @@ export const profile = {
   phone: '+91 99166 60830',
   phoneHref: 'tel:+919916660830',
   location: 'Bengaluru, India',
-  github: 'https://github.com/Ktameem29',
+  github: 'https://github.com/khantameem29',
   linkedin: 'https://www.linkedin.com/in/tameemkhan29',
 }
 

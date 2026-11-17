@@ -8,7 +8,7 @@ const channels = [
   { Icon: LuMail, label: 'Email', value: profile.email, href: `mailto:${profile.email}` },
   { Icon: LuPhone, label: 'Phone', value: profile.phone, href: profile.phoneHref },
   { Icon: FaLinkedin, label: 'LinkedIn', value: 'in/tameemkhan29', href: profile.linkedin, external: true },
-  { Icon: FaGithub, label: 'GitHub', value: 'Ktameem29', href: profile.github, external: true },
+  { Icon: FaGithub, label: 'GitHub', value: 'khantameem29', href: profile.github, external: true },
 ]
 
 const field =

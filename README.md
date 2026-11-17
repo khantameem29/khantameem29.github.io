@@ -39,4 +39,4 @@ Project screenshots go in `public/images/projects/`.
 
 - Email: ktameem2004@gmail.com
 - LinkedIn: https://www.linkedin.com/in/tameemkhan29
-- GitHub: https://github.com/Ktameem29
+- GitHub: https://github.com/khantameem29
