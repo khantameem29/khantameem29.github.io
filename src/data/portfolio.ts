@@ -123,8 +123,8 @@ export const projects: Project[] = [
     tagline: 'Student project collaboration hub',
     description:
       'A full-stack collaboration platform that connects people and keeps team projects in one place: create projects, manage tasks and collaborate with teammates in real time.',
-    highlights: ['Team projects & Kanban task boards', 'Real-time chat and file sharing', 'JWT auth with owner/member roles'],
-    tech: ['React', 'Vite', 'Node.js', 'JWT', 'Real-time', 'Vercel'],
+    highlights: ['Drag-and-drop Kanban with priorities, assignees and due dates', 'Real-time chat with typing indicators via Socket.io', 'JWT auth with owner/member roles and file sharing'],
+    tech: ['React', 'Vite', 'Node.js', 'Socket.io', 'JWT', 'Vercel'],
     visual: 'kanban',
     image: '/images/projects/collabx.webp',
     github: 'https://github.com/khantameem29/Collabxx',
@@ -135,7 +135,7 @@ export const projects: Project[] = [
     tagline: 'AI-powered finance habit tracker',
     description:
       'A fintech application that helps users track spending, build saving discipline and predict savings, backed by its own REST API.',
-    highlights: ['Spending tracking & financial health dashboard', 'AI-driven saving insights', 'Dedicated REST API backend'],
+    highlights: ['Financial health dashboard with cash-flow charts', 'AI spending insights, savings predictions and overspending alerts', 'Habit streaks, smart budgeting and goal tracking'],
     tech: ['REST API', 'Backend', 'Netlify'],
     visual: 'finance',
     image: '/images/projects/finora.webp',
@@ -164,13 +164,14 @@ export const projects: Project[] = [
 
 export const experience = [
   {
-    role: 'Backend Developer Intern',
+    role: 'Software Engineer Intern (Backend)',
     company: 'Kaaslabs Automation (OPC) Private Limited',
     period: 'Jan 2026 – May 2026',
+    certificate: 'https://drive.google.com/file/d/1T9fti75tfClwOBGJ6Tzmzwg6Ll1gDsm0/view?usp=drivesdk',
     summary:
       'Worked on the backend of PadosMe, a Go-based microservices platform for proximity-based outreach, sales and marketing.',
     points: [
-      'Developed backend microservices in Go, including the Catalogue, Rating and Analytics services.',
+      'Designed and developed the Catalogue, Rating and Analytics microservices in Go.',
       'Built REST APIs for orders, payments, notifications and ledger services.',
       'Designed event-driven communication between services using RabbitMQ.',
       'Containerized microservices with Docker for consistent, scalable deployments.',
@@ -190,7 +191,4 @@ export const education = {
 export const certifications: { title: string; issuer: string; status?: string }[] = [
   { title: 'AI Engineer Course', issuer: 'TuteDude', status: 'In progress' },
   { title: 'DSA Skill Assessment', issuer: 'Scaler' },
-  { title: 'Supervised & Unsupervised Machine Learning', issuer: 'Simplilearn' },
-  { title: 'Introduction to Front End Development', issuer: 'Simplilearn' },
-  { title: 'Java for Problem Solving', issuer: 'CodeChef' },
 ]
