@@ -2,7 +2,7 @@
 
 Personal portfolio of **Tameem Khan**, Software Engineer · Backend Developer · AI/ML Enthusiast.
 
-**Live:** https://tameemkhan.netlify.app
+**Live:** https://khantameem29.github.io · https://tameemkhan.netlify.app
 
 ![Portfolio preview](public/images/og.jpg)
 
@@ -12,7 +12,7 @@ Personal portfolio of **Tameem Khan**, Software Engineer · Backend Developer ·
 - Vite
 - Tailwind CSS v4
 - react-icons
-- Deployed on Netlify
+- Deployed on GitHub Pages (via GitHub Actions) and Netlify
 
 ## Features
 
