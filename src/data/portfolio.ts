@@ -141,25 +141,6 @@ export const projects: Project[] = [
     image: '/images/projects/finora.webp',
     live: 'https://finora-app.netlify.app',
   },
-  {
-    title: 'PadosMe',
-    tagline: 'Proximity-based outreach & marketing platform',
-    description:
-      'A proximity-based digital outreach, sales and marketing platform built as Go microservices. I worked on backend services including Catalogue, Rating and Analytics.',
-    highlights: ['Catalogue, Rating & Analytics services', 'Event-driven messaging', 'Containerized deployments'],
-    tech: ['Go', 'Microservices', 'RabbitMQ', 'PostgreSQL', 'Docker', 'Prometheus'],
-    visual: 'services',
-    note: 'Built during my internship at Kaaslabs',
-  },
-  {
-    title: 'AI Career Mentor',
-    tagline: 'AI-powered career guidance',
-    description:
-      "An AI career guidance application that analyses a user's profile, identifies skill gaps and generates personalized learning recommendations.",
-    highlights: ['Profile analysis', 'Skill-gap identification', 'Personalized learning paths'],
-    tech: ['LangChain', 'LangGraph', 'FAISS', 'HuggingFace', 'Gemini', 'Python'],
-    visual: 'ai',
-  },
 ]
 
 export const experience = [

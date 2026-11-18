@@ -8,19 +8,25 @@ export default function Navbar() {
   const [active, setActive] = useState('')
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 12)
+    const sections = navLinks.map((l) => document.querySelector(l.href)).filter(Boolean) as Element[]
+
+    // Highlight the last section whose top has passed the middle of the screen.
+    // Nothing is highlighted while the hero (#home) is in view.
+    const onScroll = () => {
+      setScrolled(window.scrollY > 12)
+      const mid = window.innerHeight / 2
+      const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4
+      let current = ''
+      for (const s of sections) if (s.getBoundingClientRect().top <= mid) current = `#${s.id}`
+      if (atBottom && sections.length) current = `#${sections[sections.length - 1].id}`
+      setActive(current)
+    }
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
-
-    const sections = navLinks.map((l) => document.querySelector(l.href)).filter(Boolean) as Element[]
-    const io = new IntersectionObserver(
-      (entries) => entries.forEach((e) => e.isIntersecting && setActive(`#${e.target.id}`)),
-      { rootMargin: '-45% 0px -50% 0px' },
-    )
-    sections.forEach((s) => io.observe(s))
+    window.addEventListener('resize', onScroll)
     return () => {
       window.removeEventListener('scroll', onScroll)
-      io.disconnect()
+      window.removeEventListener('resize', onScroll)
     }
   }, [])
 
